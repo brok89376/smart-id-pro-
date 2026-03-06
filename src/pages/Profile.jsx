@@ -10,7 +10,7 @@ export default function ProfilePage() {
     phone: "",
     avatar: "https://api.dicebear.com/8.x/adventurer/svg?seed=default", // Default Avatar
   });
-
+  const API_BASE_URL = "https://smart-id-pro.onrender.com";
   const [isEditing, setIsEditing] = useState(false);
   const [tempData, setTempData] = useState(profileData);
   const fileInputRef = useRef(null);
