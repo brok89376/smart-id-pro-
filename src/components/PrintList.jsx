@@ -6,7 +6,8 @@ export default function PrintListPage() {
   const [printList, setPrintList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
-  const API_BASE_URL = import.meta.env.VITE_API_URL; // Backend URL (adjust if needed)
+  // const API_BASE_URL = import.meta.env.VITE_API_URL; // Backend URL (adjust if needed)
+  const API_BASE_URL = "https://smart-id-pro.onrender.com";
   // ✨ Real Data Fetching
   useEffect(() => {
     const fetchPrints = async () => {
