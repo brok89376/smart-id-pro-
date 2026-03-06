@@ -5,7 +5,7 @@ import { FiLock, FiAlertTriangle, FiClock, FiX } from 'react-icons/fi';
 function ProtectedService({ children }) {
     const navigate = useNavigate();
     const location = useLocation(); // Current path track karne ke liye
-    const SECRET_PASSWORD = import.meta.env.VITE_SECRET_PASSWORD;
+    const SECRET_PASSWORD = "smart123";
 
     // 🚀 UNLOCK PATHS: In paths par session chalta rahega
     // Inme wo saare routes daalein jahan timer continue rakhna hai
