@@ -21,7 +21,7 @@ export default function ProfilePage() {
 
   const fetchProfileFromDB = async () => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/user/profile?email=${userEmail}`);
+      const response = await fetch("https://smart-id-pro.onrender.com/api/user/profile?email=${userEmail}");
       const data = await response.json();
 
       if (response.ok) {
