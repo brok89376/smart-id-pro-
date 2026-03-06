@@ -16,7 +16,7 @@ export const extractAadhaar = async (file, password) => {
     }
 
     const response = await axios.post(
-      `${API_BASE}/extract-aadhaar`,
+      `${API_BASE_URL}/extract-aadhaar`,
       formData,
       {
         headers: {
