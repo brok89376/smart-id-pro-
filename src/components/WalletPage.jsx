@@ -8,8 +8,10 @@ export default function WalletPage() {
   const [balance, setBalance] = useState(0.00);
   const [transactions, setTransactions] = useState([]);
   const [loading, setLoading] = useState(true);
-  const API_BASE_URL = import.meta.env.VITE_API_URL; // Backend URL (adjust if needed)
+  // const API_BASE_URL = import.meta.env.VITE_API_URL; // Backend URL (adjust if needed)
+const API_BASE_URL = "https://smart-id-pro.onrender.com";
 
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
