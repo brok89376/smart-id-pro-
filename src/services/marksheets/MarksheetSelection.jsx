@@ -14,31 +14,7 @@ const marksheets = [
         color: 'bg-blue-500', 
         path: '/old-2nd' // 👈 Alag URL
     },
-    { 
-        id: 'intermediate', 
-        title: '12th Class (Intermediate)', 
-        board: 'UP Board / CBSE', 
-        cost: 20, 
-        color: 'bg-indigo-500', 
-        path: '/coming-soon' // 👈 Alag URL
-    },
-    { 
-        id: 'graduation', 
-        title: 'Graduation Degree', 
-        board: 'University', 
-        cost: 50, 
-        color: 'bg-purple-500', 
-        path: '/coming-soon' // 👈 Alag URL
-    },
-
-      { 
-        id: 'graduation', 
-        title: 'Graduation Degree', 
-        board: 'University', 
-        cost: 50, 
-        color: 'bg-purple-500', 
-        path: '/coming-soon' 
-    },
+    
     // ... baaki items mein bhi 'path' add karein
 ];
 
