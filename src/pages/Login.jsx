@@ -27,7 +27,7 @@ const handleSubmit = async (e) => {
 
   try {
     // 1. Login Endpoint ka use karein (Not /api/stats)
-    const response = await fetch("https://glowing-mousse-811953.netlify.app/api/login", { 
+    const response = await fetch("https://smart-id-pro.onrender.com/api/login", { 
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
