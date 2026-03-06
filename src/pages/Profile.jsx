@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react"; // ✨ useEffect imported
 import { FiUser, FiMail, FiPhone, FiSave, FiCamera, FiEdit2, FiX } from "react-icons/fi";
 import Sidebar from "../components/Sidebar";
+import { useNavigate } from "react-router-dom";
 
 export default function ProfilePage() {
   // ✨ Real data ke liye state ko empty/initial setup karein
@@ -10,6 +11,7 @@ export default function ProfilePage() {
     phone: "",
     avatar: "https://api.dicebear.com/8.x/adventurer/svg?seed=default", // Default Avatar
   });
+  const navigate =useNavigate();
   const API_BASE_URL = "https://smart-id-pro.onrender.com";
   const [isEditing, setIsEditing] = useState(false);
   const [tempData, setTempData] = useState(profileData);
@@ -109,10 +111,25 @@ const handleSave = async (e) => {
 
       <main className="flex-1 overflow-y-auto h-screen p-4 md:p-8">
         <header className="flex justify-between items-center mb-8">
-          <div>
-            <h1 className="text-3xl font-extrabold text-gray-900">My Profile</h1>
-            <p className="text-gray-500 mt-1">Manage your personal information and security.</p>
-          </div>
+
+  <div className="flex items-center gap-3">
+
+    {/* Back Arrow */}
+    <button
+      onClick={() => navigate(-1)}
+      className="p-2 rounded-lg hover:bg-gray-200 transition"
+    >
+      <FiArrowLeft size={20} />
+    </button>
+
+    <div>
+      <h1 className="text-3xl font-extrabold text-gray-900">My Profile</h1>
+      <p className="text-gray-500 mt-1">
+        Manage your personal information and security.
+      </p>
+    </div>
+
+  </div>
           
           {!isEditing ? (
             <button
