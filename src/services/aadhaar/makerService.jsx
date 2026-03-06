@@ -2,7 +2,8 @@
 
 import axios from "axios";
 
-const API_BASE = import.meta.env.VITE_API_URL; // change if needed
+// const API_BASE = import.meta.env.VITE_API_URL; // change if needed
+const API_BASE_URL = "https://smart-id-pro.onrender.com";
 
 export const generateAadhaar = async (data, paymentMethod) => {
   try {
